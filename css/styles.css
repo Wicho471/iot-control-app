@@ -4,6 +4,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #f0f2f5;
     color: #333;
+    min-height: 100vh;
 }
 
 .iot-window {
@@ -13,6 +14,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #dee2e6;
+    margin: auto;
 }
 
 .window-header {
@@ -43,6 +45,13 @@ body {
     }
 }
 
+.control-section {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fcfcfc;
+}
+
 .control-panel {
     background-color: #fcfcfc;
 }
@@ -67,4 +76,8 @@ body {
 
 .status-display {
     font-size: 0.95rem;
+}
+
+.table {
+    vertical-align: middle;
 }

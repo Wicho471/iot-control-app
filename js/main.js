@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const api = new ApiService(API_BASE_URL);
 
+    SequenceManager.init(api, updateStatus);
     MovementControl.init(api, updateStatus);
     ObstacleControl.init(api, updateStatus);
-    SequenceManager.init(api, updateStatus);
 
 });

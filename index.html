@@ -21,28 +21,30 @@
         
         <div class="window-body">
             <h1 class="h3 text-center mb-4 fw-bold">Aplicación de Control IoT</h1>
-            
+
             <section class="control-section shadow-sm mb-4" id="sequence-section">
-                <h2 class="h5 fw-semibold mb-3">Gestión de Secuencias</h2>
-                
+                <h2 class="h5 fw-semibold mb-3">Gestión de Secuencias (Aleatorias DB)</h2>
+                <p class="small text-muted">
+                    Crea y ejecuta secuencias con pasos aleatorios generados por la base de datos.
+                </p>
                 <div class="row g-3">
                     <div class="col-md-7">
                         <label for="seq-name-input" class="form-label">Nombre de Secuencia</label>
-                        <input type="text" class="form-control" id="seq-name-input" placeholder="Ej. Patrulla A">
+                        <input type="text" class="form-control" id="seq-name-input" placeholder="Ej. Patrulla Aleatoria">
                     </div>
                     <div class="col-md-3">
                         <label for="seq-steps-input" class="form-label">Pasos</label>
                         <input type="number" class="form-control" id="seq-steps-input" value="5" min="1">
                     </div>
                     <div class="col-md-2 d-flex align-items-end">
-                        <button type="button" id="btn-seq-create" class="btn btn-primary w-100">Crear</button>
+                        <button type="button" id="btn-seq-create" class="btn btn-info w-100">Crear</button>
                     </div>
                 </div>
 
                 <hr class="my-4">
 
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h3 class="h6 mb-0">Secuencias Disponibles</h3>
+                    <h3 class="h6 mb-0">Secuencias Guardadas (DB)</h3>
                     <button type="button" id="btn-seq-refresh" class="btn btn-sm btn-outline-secondary">
                         <i class="bi bi-arrow-clockwise"></i> Refrescar
                     </button>
@@ -54,7 +56,7 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Pasos</th>
+                                <th scope="col">Pasos (DB)</th>
                                 <th scope="col" class="text-end">Acción</th>
                             </tr>
                         </thead>
@@ -72,7 +74,6 @@
                         <button type="button" id="btn-forward" class="btn btn-success fw-semibold">Adelante</button>
                         <button type="button" id="btn-turn-right-1" class="btn btn-success fw-semibold">Vuelta derecha</button>
                     </div>
-                    
                     <div class="button-row mb-3">
                         <button type="button" id="btn-turn-360-left" class="btn btn-danger fw-semibold">360º izquierda</button>
                         <button type="button" id="btn-turn-90-left" class="btn btn-danger fw-semibold">90º izquierda</button>
@@ -80,7 +81,6 @@
                         <button type="button" id="btn-turn-90-right" class="btn btn-danger fw-semibold">90º derecha</button>
                         <button type="button" id="btn-turn-360-right" class="btn btn-danger fw-semibold">360º derecha</button>
                     </div>
-                    
                     <div class="button-row">
                         <button type="button" id="btn-turn-left-2" class="btn btn-warning fw-semibold">Vuelta izquierda</button>
                         <button type="button" id="btn-backward" class="btn btn-warning fw-semibold">Atrás</button>
@@ -94,10 +94,10 @@
                 <div class="control-panel obstacle-panel">
                     <div class="button-row">
                         <button type="button" id="btn-obs-forward" class="btn btn-info fw-semibold">Obs. Adelante</button>
-                        <button type="button" id="btn-obs-backward" class="btn btn-info fw-semibold">Obs. Atrás</button>
-                        <button type="button" id="btn-obs-left" class="btn btn-info fw-semibold">Obs. Izquierda</button>
-                        <button type="button" id="btn-obs-right" class="btn btn-info fw-semibold">Obs. Derecha</button>
-                        <button type="button" id="btn-obs-general" class="btn btn-secondary fw-semibold">Obs. General</button>
+                        <button type="button" id="btn-obs-backward" class="btn btn-info fw-semibold">Obs. Retrocede</button>
+                        <button type="button" id="btn-obs-left" class="btn btn-info fw-semibold">Obs. Adelante-Izq</button>
+                        <button type="button" id="btn-obs-right" class="btn btn-info fw-semibold">Obs. Adelante-Der</button>
+                        <button type="button" id="btn-obs-general" class="btn btn-secondary fw-semibold">Obs. Ad-Izq-Der</button>
                     </div>
                 </div>
             </section>

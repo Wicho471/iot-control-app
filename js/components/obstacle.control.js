@@ -1,9 +1,9 @@
 const obstacleMapping = {
     'btn-obs-forward': 'OBS_ADELANTE',
-    'btn-obs-backward': 'OBS_ATRAS',
-    'btn-obs-left': 'OBS_IZQUIERDA',
-    'btn-obs-right': 'OBS_DERECHA',
-    'btn-obs-general': 'OBS_GENERAL'
+    'btn-obs-backward': 'OBS_RETROCEDE',
+    'btn-obs-left': 'OBS_ADELANTE_IZQ',
+    'btn-obs-right': 'OBS_ADELANTE_DER',
+    'btn-obs-general': 'OBS_ADELANTE_IZQ_DER'
 };
 
 let _api;

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_BASE_URL = 'http://localhost:5500';
-    //const API_BASE_URL = 'http://100.29.134.125:5500';
+    const API_BASE_URL = 'http://100.29.134.125:5500';
     const lastActionText = document.getElementById('last-action-text');
     const controlButtons = document.querySelectorAll('.control-panel .btn');
 

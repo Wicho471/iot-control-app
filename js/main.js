@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_BASE_URL = 'http://100.29.134.125:5500';
+    const API_BASE_URL = 'https://hjbe0v8t82.execute-api.us-east-1.amazonaws.com';
     const lastActionText = document.getElementById('last-action-text');
     const controlButtons = document.querySelectorAll('.control-panel .btn');
 

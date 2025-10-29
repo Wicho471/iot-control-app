@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.iot-window {
+    max-width: 900px;
+    width: 95%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+}
+
+.window-header {
+    background-color: #e9ecef;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+.dot.red { background-color: #fd6a5e; }
+.dot.yellow { background-color: #fdbc40; }
+.dot.green { background-color: #34c84a; }
+
+.window-body {
+    padding: 2rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .window-body {
+        padding: 2.5rem 3rem;
+    }
+}
+
+.control-panel {
+    background-color: #fcfcfc;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.btn {
+    min-width: 120px;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.status-display {
+    font-size: 0.95rem;
+}
